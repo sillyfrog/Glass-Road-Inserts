@@ -1,0 +1,15 @@
+BUILDING_W = 53; // Measured about 52mm
+BUILDING_D = 35; // Measured about 34mm
+BUILDING_H = 2;
+
+BUILDING_GRIP_PCG = 0.5;
+
+FOREST_W = 108; // Measured about 107
+FOREST_D = BUILDING_D;
+FOREST_H = BUILDING_H;
+
+PRODUCTION_BOARD_W = 126;
+PRODUCTION_BOARD_D = 241;
+
+CARD_W = 57.5; // Measured 56.98
+CARD_D = 88; // Measured 87.20
