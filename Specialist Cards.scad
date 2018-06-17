@@ -2,9 +2,9 @@ include <consts.scad>;
 
 // Needs to be cut in 2 to print on a 220mm bed, select if printing top or bottom
 // Also update difference/intersection function below
-PRINT_TOP = false;
+PRINT_TOP = true;
 
-PRINT_ERROR = 0.2; // Error in a print, for the join
+PRINT_ERROR = 0.5; // Error in a print, for the join
 
 FLOOR = 1.2;
 
@@ -30,7 +30,7 @@ TEXT_BASE_BORDER = 3;
 
 TEXT_SIZE = 5;
 
-intersection() { // This should be difference/intersection for top/bottom
+difference() { // This should be difference/intersection for top/bottom
     difference () {
         cube([PRODUCTION_BOARD_W, PRODUCTION_BOARD_D, BOX_H]);
         translate([PRODUCTION_BOARD_W/2, EDGE_TO_SPINNER, FLOOR+CARD_STACK]) cylinder(d=SPINNER_DIA,h=SPINNER_H+R);
